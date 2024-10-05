@@ -15,8 +15,8 @@ int main() {
 	printf("Lab 5 example solution.\n");
 
 	//task_1();
-	//task_2();
-	task_3();
+	task_2();
+	//task_3();
 	//task_4();
 
 	return 0;
