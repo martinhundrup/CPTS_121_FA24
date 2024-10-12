@@ -1,0 +1,6 @@
+customer num: 11111, total: 883.59, avg: 1.96
+customer num: 22222, total: 51.77, avg: 1.61
+customer num: 33333, total: 7.99, avg: 0.95
+customer num: 44444, total: 23.91, avg: 1.33
+customer num: 55555, total: 187.09, avg: 1.87
+customer num: 55556, total: 193.06, avg: 1.87
