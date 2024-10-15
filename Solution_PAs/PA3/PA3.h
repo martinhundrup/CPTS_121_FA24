@@ -9,6 +9,7 @@
  */
 
 #ifndef PA3
+#define PA3
 
 #define _CRT_SECURE_NO_WARNINGS
 
