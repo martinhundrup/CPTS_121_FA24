@@ -5,7 +5,7 @@
  * Class: CPT_S 121, Fall 2024
  * Assignment: Lab 8
  * Created: October 14, 2024
- * Last Updated: October 15, 2024
+ * Last Updated: October 18, 2024
  */
 
 #include "lab8.h"
@@ -19,10 +19,14 @@ void task_1() {
 	FILE* infile = fopen("task1.dat", "r");
 
 	int array[100] = { 0 };
+	
 
 	// read from then close file
 	int n = fread_int_to_array(infile, array);
 	fclose(infile);
+
+	// example of malloc
+	//int* array = (int*)malloc((int)sizeof(int) * n);
 
 	// display array state
 	printf("the array prior to reversing:\n");
@@ -170,16 +174,15 @@ void task_4() {
 	}
 	else {
 		printf("sorry, maybe next time...\n");
+		printf("your word: %s\n", word);
 	}
-
-	printf("your word: %s\n", word);
 }
 
 int hangman(char* word) {
 
 	int length = strlen(word); // string.h library function
-	int guesses[256] = { 0 }; // keeps tracks of what characters the user has guessed so far
-					          // trades space for time
+	int guesses[256] = { 0 };  // keeps tracks of what characters the user has guessed so far
+					           // trades space for time
 	char input = '\0';
 	int incorrect_guesses = 5; // amount of guesses before the player loses
 

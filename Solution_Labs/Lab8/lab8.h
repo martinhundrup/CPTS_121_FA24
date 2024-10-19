@@ -5,7 +5,7 @@
  * Class: CPT_S 121, Fall 2024
  * Assignment: Lab 8
  * Created: October 14, 2024
- * Last Updated: October 1, 2024
+ * Last Updated: October 18, 2024
  */
 
 // guard code
@@ -14,7 +14,7 @@
 
 #define _CRT_SECURE_NO_WARNINGS
 
-#define MAX 10
+#define MAX 20
 
 #include <stdio.h>
 #include <stdlib.h>
