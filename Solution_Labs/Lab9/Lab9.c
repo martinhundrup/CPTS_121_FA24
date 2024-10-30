@@ -5,7 +5,7 @@
  * Class: CPT_S 121, Fall 2024
  * Assignment: Lab 9
  * Created: October 21, 2024
- * Last Updated: October 23, 2024
+ * Last Updated: October 29, 2024
  */
 
 #include "Lab9.h"
@@ -47,7 +47,7 @@ char* my_strcat(char* destination, const char* source) {
 	int d_len = my_strlen(destination);
 	int s_len = my_strlen(source);
 
-	for (int i = 0; i < s_len; i++) {
+	for (int i = 0; i <= s_len; i++) {
 
 		destination[i + d_len] = source[i];
 	}
@@ -58,24 +58,13 @@ char* my_strcat(char* destination, const char* source) {
 int my_strcmp(const char* s1, const char* s2) {
 
 	int len = my_strlen(s1);
-	for (int i = 0; i < len; i++) {
+	for (int i = 0; i <= len; i++) { // see if they are unequal
 
-		if (s2[i] == '\0')
-			return 1; // RHS is equal to LHS but shorter
-		else if (s1[i] < s2[i])
-			return -1; // LHS is less than RHS
-		else if (s2[i] < s1[i])
-			return 1; // RHS is less than LHS
-		else if (s1[i + 1] == '\0' && s2[i + 1] != '\0')
-			return -1; // LHS is equal to RHS but shorter
+		if (s1[i] < s2[i])
+			return -1;
+		else if (s1[i] > s2[i])
+			return 1;
 	}
 
-	return 0; // they are equal
-}
-
-int my_strlen(const char* s) {
-
-	int i = 0;
-	for (; s[i] != '\0'; i++);
-	return i;
+	return 0; // equal
 }
