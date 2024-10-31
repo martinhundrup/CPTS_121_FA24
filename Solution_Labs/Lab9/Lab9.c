@@ -68,3 +68,10 @@ int my_strcmp(const char* s1, const char* s2) {
 
 	return 0; // equal
 }
+
+int my_strlen(const char* str) {
+
+	int i = 0;
+	for (; str[i] != '\0'; i++); // return index of first null char
+	return i;
+}
