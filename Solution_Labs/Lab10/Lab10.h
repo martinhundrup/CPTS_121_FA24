@@ -10,7 +10,7 @@
 
  // guard code
 #ifndef LAB10_H
-#define LAB910_H
+#define LAB10_H
 
 #define _CRT_SECURE_NO_WARNINGS
 

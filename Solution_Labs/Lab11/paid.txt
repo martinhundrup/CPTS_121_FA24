@@ -1,0 +1,4 @@
+total payment: 8471.97
+avg payment: 2117.99
+max payment: 3828.80
+min payment: 1040.34
