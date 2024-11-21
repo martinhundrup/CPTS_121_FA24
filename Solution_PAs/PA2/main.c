@@ -100,7 +100,7 @@ int main(void) {
 	int _a = 0;
 
 	printf("General equation:\n");
-	printf("y = (89 / 27)  - z * x + a / (a % 2)\n");
+	printf("y = (89 / 27)  - z * x + a / (a %% 2)\n");
 	printf("enter x: "); scanf("%lf", &_x);
 	printf("enter z: "); scanf("%lf", &_z);
 	printf("enter a: "); scanf("%d", &_a);
